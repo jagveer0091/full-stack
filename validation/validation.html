@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head><title>
+Introduction
+</title>
+</head>
+<style>
+body{
+background:url("https://i.pinimg.com/originals/c9/31/7d/c9317db8f7423c88cdf27ef010dca8ed.jpg");
+background-size:cover;
+}
+input:hover{background:yellow;
+}
+
+div{
+text-align:center;
+margin:20px 0px 20px 0px;
+}
+h1{text-align:center;
+}
+
+.vd{color:#8fbc8f;
+}
+legend{text-align:center;}
+
+</style>
+<body>
+
+<div class="vd">
+<form>
+<fieldset>
+<legend>Validation</legend>
+<b>
+Username:
+<input type="text" placeholder="enter username" oninvalid="alert('Invalid name!');"  required><br><br>
+Email id:
+<input type="email" name="email" oninvalid="alert('Invalid email');" placeholder="email" required><br><br>
+Mobile Number:
+<input type="text" pattern="[0-9]{10}" name="phone" oninvalid="alert('Invalid phone!');" placeholder="phone" required><br><br>
+Password(6 or greater):
+  <input type="password" name="password" pattern=".{6,} "oninvalid="alert('Invalid password!');" placeholder="password" required>
+  <br><br>
+  <input type="submit" value="Submit">
+</b>
+</fieldset>
+</form> 
+</div>
+<script>
+function alertfn(){
+alert("Info Saved!");
+}
+</script>
+</body>
