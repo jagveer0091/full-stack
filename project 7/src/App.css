@@ -1,0 +1,14 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.image1{
+    height: 210px;
+    width: 360px;
+    position: relative;
+    top: 2px;
+}
+
+.font{
+    font-size: 18px;
+}
